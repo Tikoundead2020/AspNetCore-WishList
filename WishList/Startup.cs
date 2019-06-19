@@ -24,11 +24,11 @@ namespace WishList
         {
             if (env.IsDevelopment())
             {
-             app.UseMvcWithDefaultRoute();
+            app.UseDeveloperExeceptionPage();
             }
             else
             {
-                app.UseDeveloperExeceptionPage();
+               app.UseExceptionHandler("/Home/Error");
             }
 
            
